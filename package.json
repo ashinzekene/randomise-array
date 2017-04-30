@@ -1,6 +1,6 @@
 {
   "name": "randomise-array",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Randomise arrays and generate a new array with any given length",
   "main": "randomise-array.js",
   "scripts": {
