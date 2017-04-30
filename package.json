@@ -13,5 +13,13 @@
     "array"
   ],
   "author": "Ashinze Ekene",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashinzekene/randomise-array.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ashinzekene/randomise-array/issues"
+  },
+  "homepage": "https://github.com/ashinzekene/randomise-array#readme"
 }

@@ -1,6 +1,7 @@
 ## randomise-array
 
 Library to help you randomise arrays, and generate new ones with any length
+[visit on github](https://github.com/ashinzekene/randomise-array)
 
 ### Installation
 To install randomise-array, run 
