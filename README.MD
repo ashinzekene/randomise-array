@@ -7,7 +7,7 @@ Library to help you randomise arrays, and generate new ones with any length
 To install randomise-array, run 
 
 ```
-npm install randomise-array
+npm install randomise-array --save
 ```
 
 ### Usage
