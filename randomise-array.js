@@ -1,6 +1,6 @@
+
 function randomArray(arr, options= {}){
   //First perform type checks
-  // return arr
   if (typeof options !== "object") {
     return new Error('The second argument must be an object')
   }
@@ -12,29 +12,37 @@ function randomArray(arr, options= {}){
   var newArr = []
       options = options || []
       options.length = options.length || arr.length
-      options.gte = options.gte || -Infinity
-      options.lte = options.lte || Infinity
 
-      if (typeof options.lte !== 'number') {
+      if (typeof options.lte !== 'number' && typeof options.lte !== 'undefined') {
         return new Error('lte must be a number')
       }
-      if (typeof options.gte !== 'number') {
+      if (typeof options.gte !== 'number' && typeof options.lte !== 'undefined') {
         return new Error('gte must be a number')
       }
-  var arr = arr.filter((val) => {
-    return val >= options.gte && val <= options.lte
-  })
+      if (options.lte) {
+        arr = arr.filter((val) => {
+          return val <= options.lte
+        })
+      }
+
+      if (options.gte) {
+        arr = arr.filter((val) => {
+          return val >= options.lte
+        })
+      }
 
   if(options.length > arr.length && options.unique) {
     return new Error(`Cannot generate ${options.length} unique values from ${arr.length} values`)  
   }
+
   for (currInd = 0; currInd < options.length; currInd++) {
     randInd= Math.floor(Math.random()* arr.length)
-    newArr[currInd] = arr[randInd] 
+     newArr[currInd] = arr[randInd] 
     if (options.unique) {
       arr.splice(randInd,1)
     }
   }
   return newArr
 }
+
 module.exports= exports = randomArray
