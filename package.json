@@ -10,7 +10,16 @@
     "random",
     "array",
     "randomise",
-    "array"
+    "array",
+    "arr",
+    "list",
+    "shuffle",
+    "sort",
+    "clutter",
+    "scatter",
+    "scramble",
+    "order",
+    "rand"
   ],
   "author": "Ashinze Ekene",
   "license": "MIT",
